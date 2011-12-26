@@ -1,0 +1,58 @@
+// Imports -------------------------------------------------------------------
+
+@import defaults/defaults
+
+body
+  background: rgba($blue-lightest,$small) image-url('noise.png')
+
+#page
+  +container
+  +padding-trailer(3)
+  +box-shadow(rgba($base,$small) 0 rhythm(-1) rhythm(1))
+  +background-image(linear-gradient(bottom, rgba($white,0), rgba($white,$small) rhythm(3)))
+
+[role="banner"], [role="main"], [role="contentinfo"]
+  +full
+
+[role="contentinfo"]
+  +leader(2)
+  +leading-border(1px,.25)
+  color: $light
+  border-color: $lighter
+  p
+    +trailer(0)
+
+h1
+  +adjust-font-size-to($medpx)
+  +padding-leader(.5,$medpx)
+  +trailer(.5,$medpx)
+
+h2
+  margin: 0 rhythm(-.25) rhythm(.5)
+  padding: rhythm(.25)
+  background: rgba($red-lighter,$xxxsmall)
+
+.key, .note
+  +adjust-font-size-to($normpx - $xxxsmallpx)
+  +trailer(.5,$normpx - $xxxsmallpx)
+
+.key
+  +prefix(3,4)
+  +leader(-.5,$normpx - $xxxsmallpx)
+  +bold
+
+p, li
+  +pie-clearfix
+
+strong
+  +columns(3,4)
+
+b, i
+  +bold
+
+i
+  color: $light
+
+.pts
+  +columns(1,4)
+  +omega(4)

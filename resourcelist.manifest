@@ -1,0 +1,7 @@
+CACHE MANIFEST
+# version 0.1
+
+CACHE:
+index.html
+static/css/screen.css
+static/images/noise.png
